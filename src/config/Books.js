@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.connect('mongodb+srv://sarahurcezino:sarah123@cluster0.dqcjmb4.mongodb.net/bookstore?retryWrites=true&w=majority')
+mongoose.connect(process.env.DB_CONNECTION_STRING)
 
 const bookSchema = new mongoose.Schema({
     id: { type: mongoose.Schema.Types.ObjectId },
