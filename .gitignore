@@ -2,3 +2,5 @@ node_modules
 
 # variaveis de ambiente
 .env
+
+utils.txt
